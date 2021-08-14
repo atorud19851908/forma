@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#e7e7e6;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    background-color: #e7e7e6;
+    width: 900px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 2px;
+    box-shadow: 0 0 10px 5px rgb(177, 177, 175);
+    overflow: hidden;
+}
+
+.card{
+    display: flex;
+    justify-content:start;
+    align-items:stretch;
+    width: 100%;
+    height: 50vh;
+    background-color: #fff;
+    border:2px solid rgb(139, 139, 137);
+}
+
+.image{
+    margin: 10px;
+    width: 30%;
+}
+
+.image img{
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.image img:hover{
+    transform: scale(1.1);
+}
+
+.image .btn_white{
+    margin: 10px 0 0 72px;
+    display: block;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #fff;
+    color: #656564;
+    border: 2px solid #ccc;
+    outline: none;
+}
+
+.card_data{
+    margin-top:30px;
+}
+
+.card_data h1,p{
+    margin-top: 10px;
+    color: #0a0a0a;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card_data span{
+    color: rgb(33, 18, 247);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form{
+    background-color: #fff;
+    margin-top: 30px;
+    width: 100%;
+    height: 50vh;
+    border:2px solid rgb(139, 139, 137);
+    overflow: hidden;
+}
+ 
+form .btn_succes{
+    display: block;
+    width: 100%;
+    background-color: #3083b2;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 0 10px 30px;
+    text-align: start;
+    border: 2px solid #2472a1;
+    outline: none;
+}
+
+form input {
+    display: block;
+    width: 95%;
+    margin: 10px 15px 0;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #e9e9e7;
+    padding: 10px;
+}
+
+#button_submit{
+    width: 150px;
+    display: block;
+    background-color: rgb(14, 134, 247);
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+
+#button_submit:hover{
+    background-color: rgb(7, 56, 102);
+    cursor: pointer;
+}
+
+form input:focus::-webkit-input-placeholder {
+    font-size: 1em;
+    position: relative;
+    top: -20px; 
+    transition: 0.2s ease-out;
+}
